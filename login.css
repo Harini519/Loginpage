@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('4235587.jpg'); 
+    background-size: cover;  
+    background-position: center center;  
+    background-attachment: fixed;  
+    background-repeat: no-repeat;  
+    height: 100vh; 
+    width: 100%;  
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #2C3E50; /* Dark blue color for header */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+/* Styling the Logo */
+.logo {
+    font-size: 36px;  /* Adjusted font size for the logo */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Links and Button Styling */
+.head-btns a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.head-btns a:hover {
+    text-decoration: underline;
+}
+
+/* Main Login/Signup Container */
+.login-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(244, 244, 244, 0.9); /* Light gray overlay for readability */
+}
+
+/* Login and Signup Box Styling */
+.login-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    color: #2C3E50; /* Dark blue color for header text */
+    font-size: 24px;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0; 
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;  /* Light gray background for inputs */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db; /* Light blue when input is focused */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Light blue color for buttons */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+}
+
+button:active {
+    background-color: #1c638e; /* Even darker blue on active state */
+}
+
+/* Signup and Login Switch Links */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+p a {
+    color: #3498db; /* Light blue for links */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 100%;
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 28px;  /* Adjust logo size on mobile */
+    }
+
+    .head-btns a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
